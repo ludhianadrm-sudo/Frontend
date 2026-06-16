@@ -1,0 +1,450 @@
+@import '../base/mixin.scss';
+@import '../base/variable.scss';
+@import '../helper/base.scss';
+@import '../helper/reset.scss';
+
+
+
+/* GLOBAL */
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    background: #f4f7fc;
+
+    font-family: 'Poppins', sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+
+/* MAIN SECTION */
+
+.create_section {
+
+    background: #f4f7fc;
+
+    min-height: 100vh;
+
+    padding: 50px 20px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+
+
+    /* FORM CARD */
+
+    .create_form {
+
+        background: #ffffff;
+
+        padding: 45px;
+
+        border-radius: 28px;
+
+        box-shadow:
+            0 10px 30px rgba(0, 0, 0, 0.08),
+            0 4px 10px rgba(0, 0, 0, 0.04);
+
+        border: 1px solid rgba(0, 0, 0, 0.05);
+
+        transition: all 0.3s ease;
+
+        width: 100%;
+
+
+
+        &:hover {
+
+            box-shadow:
+                0 15px 40px rgba(0, 0, 0, 0.12),
+                0 6px 15px rgba(0, 0, 0, 0.05);
+        }
+
+
+
+        form {
+
+            width: 100%;
+
+
+
+            /* GRID SPACING */
+
+            .MuiGrid-root {
+
+                margin-bottom: 12px;
+            }
+
+
+
+            /* FORM CONTROL */
+
+            .MuiFormControl-root {
+
+                width: 100%;
+
+
+
+                /* INPUT / SELECT */
+
+                .MuiOutlinedInput-root {
+
+                    background: transparent;
+
+                    border-radius: 16px;
+
+                    transition: all 0.3s ease;
+
+                    font-family: 'Poppins', sans-serif;
+
+                    overflow: hidden;
+
+
+
+                    fieldset {
+
+                        border-color: #d6deeb;
+
+                        transition: all 0.3s ease;
+                    }
+
+
+
+                    &:hover fieldset {
+
+                        border-color: royalblue;
+                    }
+
+
+
+                    &.Mui-focused fieldset {
+
+                        border-color: royalblue;
+
+                        border-width: 2px;
+                    }
+
+
+
+                    /* SELECT TEXT */
+
+                    .MuiSelect-select {
+
+                        padding: 16px;
+
+                        font-size: 15px;
+
+                        color: #1f2937;
+
+                        font-weight: 500;
+
+                        background: transparent;
+                    }
+
+
+
+                    /* INPUT TEXT */
+
+                    input {
+
+                        padding: 16px;
+
+                        font-size: 15px;
+
+                        color: #1f2937;
+
+                        font-weight: 500;
+
+                        background: transparent;
+                    }
+                }
+
+
+
+                /* LABEL */
+
+                .MuiInputLabel-root {
+
+                    font-size: 15px;
+
+                    font-weight: 500;
+
+                    font-family: 'Poppins', sans-serif;
+
+                    color: #64748b;
+
+
+
+                    &.Mui-focused {
+
+                        color: royalblue;
+                    }
+                }
+
+
+
+                /* HELPER TEXT */
+
+                .MuiFormHelperText-root {
+
+                    margin-left: 5px;
+
+                    margin-top: 6px;
+
+                    font-size: 12px;
+
+                    font-family: 'Poppins', sans-serif;
+
+                    color: #94a3b8;
+                }
+            }
+
+
+
+            /* TEXTFIELD */
+
+            .MuiTextField-root {
+
+                width: 100%;
+
+
+
+                .MuiOutlinedInput-root {
+
+                    background: transparent;
+
+                    border-radius: 16px;
+
+                    transition: all 0.3s ease;
+
+
+
+                    fieldset {
+
+                        border-color: #d6deeb;
+                    }
+
+
+
+                    &:hover fieldset {
+
+                        border-color: royalblue;
+                    }
+
+
+
+                    &.Mui-focused fieldset {
+
+                        border-color: royalblue;
+
+                        border-width: 2px;
+                    }
+
+
+
+                    input {
+
+                        background: transparent;
+                    }
+                }
+
+
+
+                .MuiInputLabel-root {
+
+                    font-size: 15px;
+
+                    font-weight: 500;
+
+                    color: #64748b;
+
+                    font-family: 'Poppins', sans-serif;
+
+
+
+                    &.Mui-focused {
+
+                        color: royalblue;
+                    }
+                }
+            }
+
+
+
+            /* DATE PICKER */
+
+            .MuiPickersOutlinedInput-root {
+
+                background: transparent !important;
+
+                border-radius: 16px !important;
+
+                transition: all 0.3s ease;
+
+                overflow: hidden;
+
+
+
+                fieldset {
+
+                    border-color: #d6deeb !important;
+                }
+
+
+
+                &:hover fieldset {
+
+                    border-color: royalblue !important;
+                }
+
+
+
+                &.Mui-focused fieldset {
+
+                    border-color: royalblue !important;
+
+                    border-width: 2px !important;
+                }
+            }
+
+
+
+            /* DATE INPUT */
+
+            .MuiPickersSectionList-root {
+
+                padding: 16px !important;
+
+                font-size: 15px;
+
+                font-family: 'Poppins', sans-serif;
+
+                background: transparent !important;
+            }
+
+
+
+            /* BUTTON */
+
+            .sub {
+
+                margin-top: 30px !important;
+
+                padding: 14px 40px !important;
+
+                border-radius: 14px !important;
+
+                font-size: 16px !important;
+
+                font-weight: 600 !important;
+
+                font-family: 'Poppins', sans-serif !important;
+
+                text-transform: capitalize !important;
+
+                background: linear-gradient(
+                    135deg,
+                    royalblue,
+                    slateblue
+                ) !important;
+
+                box-shadow:
+                    0 8px 20px rgba(65, 105, 225, 0.25);
+
+                transition: all 0.3s ease !important;
+
+
+
+                &:hover {
+
+                    transform: translateY(-3px);
+
+                    background: linear-gradient(
+                        135deg,
+                        #3156d3,
+                        #5a4de0
+                    ) !important;
+
+                    box-shadow:
+                        0 12px 24px rgba(65, 105, 225, 0.35);
+                }
+            }
+        }
+    }
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+
+    .create_section {
+
+        padding: 30px 15px;
+
+
+
+        .create_form {
+
+            padding: 30px;
+
+            border-radius: 22px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .create_section {
+
+        padding: 20px 10px;
+
+
+
+        .create_form {
+
+            padding: 20px;
+
+            border-radius: 18px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    .create_section {
+
+        .create_form {
+
+            padding: 16px;
+
+            border-radius: 16px;
+
+
+
+            form {
+
+                .sub {
+
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+@import '../base/mixin.scss';
+@import '../base/variable.scss';
+@import '../helper/base.scss';
+@import '../helper/reset.scss';
+
+.home_section .home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 20px;
+    padding: 60px 30px;
+
+    background: #f4f7fc;
+    // min-height: 100vh;
+    border-radius: 20px;
+
+    .records {
+
+        position: relative;
+
+        width: 320px;
+        min-height: 200px;
+
+        background: linear-gradient(135deg, #ffffff, #f8fbff);
+
+        border-radius: 24px;
+
+        padding: 35px 30px;
+
+        overflow: hidden;
+
+        box-shadow:
+            0 10px 30px rgba(0, 0, 0, 0.08),
+            0 4px 10px rgba(0, 0, 0, 0.04);
+
+        transition: all 0.35s ease;
+
+        cursor: pointer;
+
+        border: 1px solid rgba(255, 255, 255, 0.5);
+
+        backdrop-filter: blur(10px);
+
+        &:hover {
+            transform: translateY(-10px) scale(1.02);
+
+            box-shadow:
+                0 20px 40px rgba(0, 0, 0, 0.15),
+                0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        &::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: -50px;
+            right: -50px;
+
+            width: 140px;
+            height: 140px;
+
+            background: rgba(65, 105, 225, 0.08);
+
+            border-radius: 50%;
+        }
+
+        &::after {
+
+            content: "";
+
+            position: absolute;
+
+            bottom: -60px;
+            left: -60px;
+
+            width: 150px;
+            height: 150px;
+
+            background: rgba(123, 104, 238, 0.08);
+
+            border-radius: 50%;
+        }
+
+        h2 {
+
+            position: relative;
+            z-index: 2;
+
+            font-size: 28px;
+
+            font-weight: 700;
+
+            font-family: 'Poppins', sans-serif;
+
+            color: #0b1c39;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 30px;
+
+            text-align: center;
+        }
+
+        p {
+
+            position: relative;
+            z-index: 2;
+
+            font-size: 52px;
+
+            font-weight: 700;
+
+            font-family: 'Poppins', sans-serif;
+
+            color: royalblue;
+
+            text-align: center;
+
+            margin-top: 10px;
+        }
+
+        .icon {
+
+            position: absolute;
+
+            top: 20px;
+            right: 20px;
+
+            font-size: 42px;
+
+            color: rgba(65, 105, 225, 0.15);
+        }
+    }
+}
