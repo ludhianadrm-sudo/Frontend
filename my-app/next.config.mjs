@@ -2,7 +2,7 @@
 const nextConfig = {
   /* config options here */
   env:{
-    url:"https://backend-k483shyu0-ludhianadrm-9755s-projects.vercel.app/"
+    url:"https://backend-three-kohl-11.vercel.app/"
   },
 
   reactCompiler: true,
