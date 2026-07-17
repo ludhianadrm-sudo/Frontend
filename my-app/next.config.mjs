@@ -2,7 +2,7 @@
 const nextConfig = {
   /* config options here */
   env:{
-    url:"http://localhost:4001/"
+    url:"https://backend-k483shyu0-ludhianadrm-9755s-projects.vercel.app/"
   },
 
   reactCompiler: true,
